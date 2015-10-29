@@ -14,6 +14,11 @@
 		1F31296E1BE20AC6007394A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F31296C1BE20AC6007394A3 /* LaunchScreen.storyboard */; };
 		1F3129791BE20AC6007394A3 /* TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3129781BE20AC6007394A3 /* TipsTests.swift */; };
 		1F3129841BE20AC6007394A3 /* TipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3129831BE20AC6007394A3 /* TipsUITests.swift */; };
+		1F3129981BE24285007394A3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3129971BE24285007394A3 /* SettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1FBBA3A61BE290FA00141480 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBBA3A51BE290FA00141480 /* setting.png */; settings = {ASSET_TAGS = (); }; };
+		1FBBA3A81BE2A69100141480 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBA3A71BE2A69100141480 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		1FBBA3AA1BE2ADAC00141480 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBBA3A91BE2ADAC00141480 /* person.png */; settings = {ASSET_TAGS = (); }; };
+		1FBBA3AC1BE2AFA600141480 /* cool.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBBA3AB1BE2AFA600141480 /* cool.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		1F31297F1BE20AC6007394A3 /* TipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3129831BE20AC6007394A3 /* TipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsUITests.swift; sourceTree = "<group>"; };
 		1F3129851BE20AC6007394A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3129971BE24285007394A3 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1FBBA3A51BE290FA00141480 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		1FBBA3A71BE2A69100141480 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FBBA3A91BE2ADAC00141480 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		1FBBA3AB1BE2AFA600141480 /* cool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cool.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 			children = (
 				1F3129631BE20AC6007394A3 /* AppDelegate.swift */,
 				1F3129651BE20AC6007394A3 /* ViewController.swift */,
+				1F3129971BE24285007394A3 /* SettingViewController.swift */,
 				1F3129671BE20AC6007394A3 /* Main.storyboard */,
 				1F31296A1BE20AC6007394A3 /* Assets.xcassets */,
 				1F31296C1BE20AC6007394A3 /* LaunchScreen.storyboard */,
 				1F31296F1BE20AC6007394A3 /* Info.plist */,
+				1FBBA3AB1BE2AFA600141480 /* cool.png */,
+				1FBBA3A51BE290FA00141480 /* setting.png */,
+				1FBBA3A91BE2ADAC00141480 /* person.png */,
+				1FBBA3A71BE2A69100141480 /* README.md */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -192,6 +207,11 @@
 				TargetAttributes = {
 					1F31295F1BE20AC6007394A3 = {
 						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					1F3129731BE20AC6007394A3 = {
 						CreatedOnToolsVersion = 7.0;
@@ -228,9 +248,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBBA3A61BE290FA00141480 /* setting.png in Resources */,
 				1F31296E1BE20AC6007394A3 /* LaunchScreen.storyboard in Resources */,
+				1FBBA3AC1BE2AFA600141480 /* cool.png in Resources */,
 				1F31296B1BE20AC6007394A3 /* Assets.xcassets in Resources */,
 				1F3129691BE20AC6007394A3 /* Main.storyboard in Resources */,
+				1FBBA3AA1BE2ADAC00141480 /* person.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +280,8 @@
 			files = (
 				1F3129661BE20AC6007394A3 /* ViewController.swift in Sources */,
 				1F3129641BE20AC6007394A3 /* AppDelegate.swift in Sources */,
+				1FBBA3A81BE2A69100141480 /* README.md in Sources */,
+				1F3129981BE24285007394A3 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Huy-Ngo.Tips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Huy-Ngo.Tips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +508,7 @@
 				1F31298A1BE20AC6007394A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F31298B1BE20AC6007394A3 /* Build configuration list for PBXNativeTarget "TipsTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +517,7 @@
 				1F31298D1BE20AC6007394A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F31298E1BE20AC6007394A3 /* Build configuration list for PBXNativeTarget "TipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +526,7 @@
 				1F3129901BE20AC6007394A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
